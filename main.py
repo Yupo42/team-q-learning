@@ -57,5 +57,5 @@ for episode in range(episodes):
 
 print("Обучение завершено.")
 
-feature2.getQTable()
+feature2.getQTable(Q, rewards_per_episode)
 feature1.getQTest()

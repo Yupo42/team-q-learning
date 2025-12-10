@@ -58,4 +58,4 @@ for episode in range(episodes):
 print("Обучение завершено.")
 
 feature2.getQTable()
-feature1.getQTest()
+feature1.getQTest(Q, env)

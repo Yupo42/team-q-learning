@@ -1,4 +1,8 @@
-def getQTest():
+import gymnasium
+import numpy as np
+import matplotlib.pyplot as plt
+
+def getQTest(Q, env):
     # Тест обученного агента (без визуализации)
     test_episodes = 100
     wins = 0

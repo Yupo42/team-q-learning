@@ -1,6 +1,8 @@
 import gymnasium
 import numpy as np
 import matplotlib.pyplot as plt
+import feature1
+import feature2
 
 # Создаём среду без визуализации для обучения
 env = gymnasium.make('FrozenLake-v1', is_slippery=True)
@@ -54,3 +56,6 @@ for episode in range(episodes):
         epsilon *= epsilon_decay
 
 print("Обучение завершено.")
+
+feature2.getQTable()
+feature1.getQTest()
